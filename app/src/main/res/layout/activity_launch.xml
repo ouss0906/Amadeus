@@ -2,18 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/activity_launch"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@drawable/gradient_background" >
+    android:layout_height="fill_parent" >
 
-    <ImageView
+    <RelativeLayout
         android:id="@+id/imageView_logo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/textView_call"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:adjustViewBounds="true"
-        android:src="@drawable/logo39" />
+        android:layout_alignParentBottom="true" />
 
     <TextView
         android:id="@+id/textView_call"
@@ -44,13 +42,24 @@
         android:src="@drawable/connect_unselect" />
 
     <ImageView
+        android:id="@+id/imageView_settings"
+        android:layout_width="180.0dip"
+        android:layout_height="40.0dip"
+        android:adjustViewBounds="false"
+        android:src="@drawable/settings_unselected"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/textView_call"
+        android:layout_alignLeft="@+id/imageView_connect"
+        android:layout_alignStart="@+id/imageView_connect" />
+
+    <ImageView
         android:id="@+id/imageView_cancel"
         android:layout_width="180.0dip"
         android:layout_height="40.0dip"
-        android:layout_below="@+id/textView_call"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="51dp"
         android:adjustViewBounds="false"
-        android:src="@drawable/cancel_unselect" />
+        android:src="@drawable/cancel_unselect"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="52dp" />
 
 </RelativeLayout>

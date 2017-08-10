@@ -6,7 +6,6 @@
         <item>Português</item>
         <item>Español</item>
         <item>Italiano</item>
-        <item>日本語</item>
     </string-array>
     
     <string-array name="languagesValues">
@@ -15,7 +14,30 @@
         <item>pt</item>
         <item>es</item>
         <item>it</item>
-        <item>ja</item>
+    </string-array>
+
+    <string-array name="kurisuOutfitsArray">
+        <item>Amadeus</item>
+        <item>Regular (S;G)</item>
+        <item>Labcoat (S;G)</item>
+        <item>Labcoat (S;G 0)</item>
+        <item>Regular (S;G 0)</item>
+    </string-array>
+
+    <string-array name="kurisuOutfitsValues">
+        <item>amadeus</item>
+        <item>regular_sg</item>
+        <item>labcoat_sg</item>
+        <item>labcoat_sg0</item>
+        <item>regular_sg0</item>
+    </string-array>
+
+    <string-array name="backgroundsArray">
+        <item>Amadeus</item>
+    </string-array>
+
+    <string-array name="backgroundsValues">
+        <item>0</item>
     </string-array>
 
     <string-array name="languagesRecogArray">

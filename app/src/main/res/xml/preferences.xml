@@ -3,11 +3,6 @@
     <PreferenceCategory android:title="@string/pref_app_settings">
         <SwitchPreference
             android:defaultValue="false"
-            android:key="show_subtitles"
-            android:summary="@string/pref_subtitles_desc"
-            android:title="@string/pref_subtitles" />
-        <SwitchPreference
-            android:defaultValue="false"
             android:key="show_notification"
             android:summary="@string/pref_notification_desc"
             android:title="@string/pref_notification" />
@@ -25,13 +20,35 @@
             android:key="lang"
             android:summary="@string/pref_lang_desc"
             android:title="@string/pref_lang" />
+        <Preference android:title="Check for update">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.suneku.amadeus"
+                android:targetClass="com.suneku.amadeus.UpdateActivity" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_appearance_settings">
+        <ListPreference
+            android:defaultValue="@string/default_background"
+            android:entries="@array/backgroundsArray"
+            android:entryValues="@array/backgroundsValues"
+            android:key="kurisu_outfits"
+            android:summary="@string/pref_backgrounds_desc"
+            android:title="@string/pref_backgrounds" />
+        <ListPreference
+            android:defaultValue="@string/default_kurisu_outfit"
+            android:entries="@array/kurisuOutfitsArray"
+            android:entryValues="@array/kurisuOutfitsValues"
+            android:key="kurisu_outfits"
+            android:summary="@string/pref_kurisu_outfits_desc"
+            android:title="@string/pref_kurisu_outfits" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_alarm_settings">
         <Preference android:title="@string/pref_alarm_setup">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:targetPackage="com.example.yink.amadeus"
-                android:targetClass="com.example.yink.amadeus.AlarmActivity" />
+                android:targetPackage="com.suneku.amadeus"
+                android:targetClass="com.suneku.amadeus.AlarmActivity" />
         </Preference>
         <ListPreference
             android:entries="@array/ringtonesArray"

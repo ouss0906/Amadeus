@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_status"
+        android:layout_marginTop="10dp"
+        android:text="Update status:"
+        android:textAlignment="gravity"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="18.0sp"
+        android:typeface="monospace"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/update_description"
+        android:layout_alignStart="@+id/update_description"
+        android:layout_alignRight="@+id/update_description"
+        android:layout_alignEnd="@+id/update_description" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update_description"
+        android:text="Press button to check for update."
+        android:textAlignment="gravity"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#FFF"
+        android:textSize="16.0sp"
+        android:typeface="monospace"
+        android:layout_below="@+id/update_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:id="@+id/check_update"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_below="@+id/update_description"
+        android:layout_alignRight="@+id/update_description"
+        android:layout_alignEnd="@+id/update_description" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Download"
+        android:id="@+id/download"
+        android:enabled="false"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_alignBaseline="@+id/check_update"
+        android:layout_alignBottom="@+id/check_update"
+        android:layout_alignLeft="@+id/update_description"
+        android:layout_alignStart="@+id/update_description" />
+
+</RelativeLayout>
